@@ -3,7 +3,8 @@
 **Xmonad** is a tiling window manager based on Xorg and written in haskell. It's main philosophies are deep customizability and easy extensibility.
 
 # Dependancies
-The main packages used in my configuration are:
+The main packages needed in my configuration are:
+* [Xorg](https://www.x.org/wiki/) - Duh
 * [xmonad](https://github.com/xmonad/xmonad) - The core package
 * [xmonad-contrib](https://github.com/xmonad/xmonad-contrib) - A community-maintained extension library for xmonad
 * [xmobar](https://github.com/jaor/xmobar) - A status bar made for xmonad
@@ -22,13 +23,21 @@ a lot of benefits like running the compiler in an isolated location, particularl
 
 Most of info for this section was taken from [Biran Buccola's blogpost](https://brianbuccola.com/how-to-install-xmonad-and-xmobar-via-stack/)
 
-### Installing Stack
+#### Installing Stack
 
 To install via curl:
 ```
 curl -sSL https://get.haskellstack.org/ | sh
 ```
-Alternatively you can clone the Stack repo and build it with pacman so you can sync it's upgrading with the rest of your system.
+Then to install GHC with Stack in it's own little space so you can build with it, run:
+```
+stack setup
+```
+GHC will default to `~/.stack`
+
+Alternatively you can clone the Stack repo and build it with pacman so you can sync its upgrading with the rest of your system.
+
+#### 
 
 ## Debian
 
