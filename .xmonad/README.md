@@ -4,7 +4,7 @@
 
 # Dependancies
 The main packages needed in my configuration are:
-* [Xorg](https://www.x.org/wiki/) - Duh
+* [xorg](https://www.x.org/wiki/) - Duh
 * [xmonad](https://github.com/xmonad/xmonad) - The core package
 * [xmonad-contrib](https://github.com/xmonad/xmonad-contrib) - A community-maintained extension library for xmonad
 * [xmobar](https://github.com/jaor/xmobar) - A status bar made for xmonad
@@ -15,6 +15,8 @@ With some additional and purely cosmetic packages, such as:
 
 # Installation
 
+&nbsp;
+
 ## Arch
 
 The official Arch Linux repository contains most of the packages needed. *However*, the main repo tends lag behind on versions and GHC can have trouble locating the needed libraries, so it's ***highly***
@@ -23,7 +25,9 @@ a lot of benefits like running the compiler in an isolated location, particularl
 
 Most of info for this section was taken from [Biran Buccola's blogpost](https://brianbuccola.com/how-to-install-xmonad-and-xmobar-via-stack/)
 
-#### Installing Stack
+&nbsp;
+
+### Installing Stack
 
 To install via curl:
 ```
@@ -37,7 +41,16 @@ GHC will default to `~/.stack`
 
 Alternatively you can clone the Stack repo and build it with pacman so you can sync its upgrading with the rest of your system.
 
-#### 
+&nbsp;
+
+### Building the haskell packages
+
+The config directory for xmonad is `~.xmonad` so this folder will be used for Stack's main ----. So, inside the .xmonad directory clone all of the haskell packages:
+```
+git clone "https://github.com/xmonad/xmonad" xmonad-git
+git clone "https://github.com/xmonad/xmonad-contrib" xmonad-contrib-git
+git clone "https://github.com/jaor/xmobar" xmobar-git
+```
 
 ## Debian
 
