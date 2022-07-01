@@ -4,7 +4,7 @@
 Personal configs I use in Arch linux :3
 
 ## freshconfiginstall.sh
-A bash script to automate common --- I perform in a fresh Arch Linux install. Grabs official packages using pacman, moves config files to their respective directories, and appends lines to init files such as .xinitrc. Assumes the script is ran from within this dotfiles directory. Current package install list: 
+A bash script to automate common actions I perform in a fresh Arch Linux install. Grabs official packages using pacman, moves config files to their respective directories, and appends lines to init files such as .xinitrc. Assumes the script is ran from within this dotfiles directory AND that you have already created users, added permissions, and installed sudo. Current package install list: 
 
 * xorg-server
 * xorg-apps
