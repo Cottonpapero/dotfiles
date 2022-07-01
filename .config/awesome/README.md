@@ -15,4 +15,4 @@ Bare minimum tiling window manager config w/ theme.lua
 
 #### Screenshot
 **Tiling mode gets window gap/color variables from theme.lua**
-[text](demo.png)
+![text](demo.png)
