@@ -58,6 +58,11 @@ mv .config/awesome $USERPATH/.config
 
 # Appending awesomewm to startx (optional prompt)
 
+if [ ! -d $USERPATH/.xinitrc]
+then
+	sudo cp /etc/X11/xinit/xinitrc $USERPATH/.xinitrc
+fi
+
 while true; do
 	read -p $'\n'"Add awesome to .xinitrc? [y/N]"$'\n' yN
 	case $yN in
